@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src\style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>  
+</head>
+
+  <script src="src/JavaScript.js"></script>
+  <body onload="wrapFix()">
+    <div class="container">
+      <span class= "spec">
+        <div class="wapp">
+        <img src="https://ssl.gstatic.com/onebox/weather/64/rain_s_cloudy.png" alt="rainy icon" />
+        <span class="temp">19</span><a href="#" id="celsius-link"> °C </a> |<a href="#"id = "faren-link"> °F </a>
+        <h1 id= cityChange>
+          Perth
+        </h1>
+        <ul>
+          <li id="currentTime">
+            Sunday 17:30
+          </li>
+          <li id="descriptWeather">
+            Light showers
+          </li>
+        </ul>
+        <ul>
+         <li class="humwin">
+                Precipitation: 0% <br />
+          <li class="humwin">
+                Humidity: 74% <br />
+          <li class="humwin">
+                Wind: 14 km/h
+              </li>
+              </li>
+              </li>
+            </span>
+                    <form>
+                      <div class="search">
+                        <input type="search" id = "mySearchBar" placeholder="Search city here">
+                      </div>
+                      <button type="submit" class="search-Button">Search</button>
+                    </form>
+            </ul>
+
+            <section>
+              <div class="weeklyForecast">
+                <p class="Mon">
+                  Monday <br />
+                  <strong>20°C</strong> / 10°C
+                  <br />
+                <img src="https://ssl.gstatic.com/onebox/weather/64/rain_s_cloudy.png" alt="rainy icon" width= "50px"/>
+                </p>
+            
+                <p class="Tues">
+                  Tuesday <br />
+                  <strong>16°C</strong> / 8°C
+                  <br />
+                <img src="https://ssl.gstatic.com/onebox/weather/64/thunderstorms.png" alt="thunder icon" width="50px" />
+                </p>
+            
+                <p class="Wed">
+                  Wednesday <br />
+                  <strong>14°C</strong> / 7°C
+                  <br />
+                  <img src="https://ssl.gstatic.com/onebox/weather/64/thunderstorms.png" alt="thunder icon" width="50px" />
+                </p>
+            
+                <p class="Thurs">
+                  Thursday <br />
+                  <strong>18°C</strong> / 7°C
+                  <br />
+                  <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" alt= "partly_cloudy" width="50px" />
+                </p>
+            
+                <p class="Fri">
+                  Friday <br />
+                  <strong>18°C</strong> / 7°C
+                  <br />
+                  <img src="https://ssl.gstatic.com/onebox/weather/48/sunny.png" alt="sunny" width="50px" />
+                  
+                </p>
+                </a>
+              </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
