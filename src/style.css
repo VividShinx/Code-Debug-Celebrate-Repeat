@@ -29,7 +29,6 @@ li {
   text-transform: capitalize;
 }
 
-
 .humwin {
   position: relative;
   text-align: left;
@@ -123,4 +122,12 @@ li {
 .search-Button:hover {
   background: #b4eae9;
   color: #332275;
+}
+
+.gitHubLink {
+  font-family: "Inconsolata", monospace;
+  position: relative;
+  cursor: pointer;
+  top: -25px;
+  right: -470px;
 }
