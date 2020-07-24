@@ -29,7 +29,7 @@ function dayDisplay(date) {
 
 function realTime(date) {
   let hours = date.getHours();
-  let mins = date.getMinutes();
+  let mins = ("0" + date.getMinutes()).slice("-2");
 
   let timestring = `${hours}:${mins}`;
   return timestring;
@@ -43,22 +43,26 @@ function showCity(event) {
   showTemp(replacement.value);
 }
 
-// On your project, when a user searches for a city 
-// it should display the name of the city on the result 
-// page and the current temperature of the city.
-
 function showTemp(userInput) {
   let apiKey = "8d4839403aa07421d58048909aa1a93b";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${userInput}&appid=8d4839403aa07421d58048909aa1a93b&units=metric`;
-  axios.get(`${apiUrl}&appid=${apiKey}`).then(typeHere);   
+  axios.get(`${apiUrl}&appid=${apiKey}`).then(typeHere);
 }
 
-function typeHere (response) {
+function typeHere(response) {
   let temperature = Math.round(response.data.main.temp);
   console.log(response.data.main.temp);
   let tempElem = document.querySelector(".temp");
-  tempElem.innerHTML = `${temperature}`;
+  tempElem.innerHTML = `${temperature}°C`;
   let descript = document.querySelector("#descriptWeather");
   descript.innerHTML = response.data.weather[0].description;
 
+  document.querySelector("#wind").innerHTML =
+    "Wind: " + Math.round(response.data.wind.speed) + "KM/H";
+  document.querySelector("#Humid").innerHTML =
+    "Humidity: " + Math.round(response.data.main.humidity) + "%";
+  document.querySelector("#minTemp").innerHTML =
+    "Minimum Temperature: " + Math.round(response.data.main.temp_min) + "°C";
+  document.querySelector("#maxTemp").innerHTML =
+    "Maximum Temperature: " + Math.round(response.data.main.temp_max) + "°C";
 }
