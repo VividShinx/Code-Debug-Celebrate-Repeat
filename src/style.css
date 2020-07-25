@@ -8,11 +8,11 @@ h1 {
   color: #b4eae9;
   font-family: "Inconsolata", monospace;
   text-align: center;
+  position: relative;
+  top: -30px;
 }
 
 ul {
-  margin: 0 0 12px;
-  padding: 0;
   color: #b4eae9;
   font-family: "Inconsolata", monospace;
 }
@@ -30,11 +30,15 @@ li {
 
 #currentTime {
   text-align: center;
+  position: relative;
+  top: -30px;
+  left: -20px;
 }
 
 #descriptWeather {
   position: relative;
-  top: 80px;
+  top: 50px;
+  left: -20px;
   text-align: center;
 }
 
@@ -54,41 +58,13 @@ li {
   color: #b4eae9;
   font-family: "Inconsolata", monospace;
   position: relative;
-  top: 12px;
+  top: -30px;
   right: -170px;
-  padding: 0px 0px 10px 0px;
-}
-
-#Humid {
-  position: relative;
-  bottom: -108px;
-  right: -285px;
-}
-
-#wind {
-  position: relative;
-  top: 90px;
-  right: -55px;
-  color: #b4eae9;
-}
-
-#minTemp {
-  position: relative;
-  top: 140px;
-  right: auto;
-  color: #32548f;
-}
-
-#maxTemp {
-  position: relative;
-  top: 120px;
-  right: -250px;
-  color: #32548f;
 }
 
 .search {
   position: relative;
-  top: -90px;
+  top: -118px;
   right: -75px;
   max-width: 50px;
   font-family: "Inconsolata", monospace;
@@ -106,13 +82,44 @@ li {
   box-shadow: rgba(37, 38, 39, 89, 0.08) 0px 8px 8px 0px;
   cursor: pointer;
   position: relative;
-  top: -118px;
+  top: -145px;
   right: -275px;
 }
 
 .search-Button:hover {
   background: #b4eae9;
   color: #332275;
+}
+
+#Humid {
+  position: relative;
+  bottom: -45px;
+  right: -250px;
+}
+
+#wind {
+  position: relative;
+  top: 28px;
+  right: -45px;
+  color: #b4eae9;
+}
+
+#minTemp {
+  position: relative;
+  top: 50px;
+  right: 20px;
+  color: #32548f;
+}
+
+#maxTemp {
+  position: relative;
+  top: 30px;
+  right: -210px;
+  color: #32548f;
+}
+
+#icon {
+  text-align: center;
 }
 
 #gitHubLink {

@@ -7,11 +7,7 @@ function wrapFix() {
   let citySwap = document.querySelector(".search-Button");
   citySwap.addEventListener("click", showCity);
 
-  let celsiusLink = document.querySelector("#celsius-link");
-  celsiusLink = addEventListener("click", toCelsius);
-
-  let farenLink = document.querySelector("#faren-link");
-  farenLink = addEventListener("click", toFaren);
+  showTemp("Melbourne");
 }
 
 function dayDisplay(date) {
@@ -65,4 +61,9 @@ function typeHere(response) {
     "Minimum Temperature: " + Math.round(response.data.main.temp_min) + "°C";
   document.querySelector("#maxTemp").innerHTML =
     "Maximum Temperature: " + Math.round(response.data.main.temp_max) + "°C";
+  let iconElement = document.querySelector("#iconPic");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
