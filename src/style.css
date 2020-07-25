@@ -59,7 +59,7 @@ li {
   font-family: "Inconsolata", monospace;
   position: relative;
   top: -30px;
-  right: -170px;
+  right: -175px;
 }
 
 .search {
@@ -89,6 +89,10 @@ li {
 .search-Button:hover {
   background: #b4eae9;
   color: #332275;
+}
+
+.celsius {
+  font-size: 20px;
 }
 
 #Humid {
