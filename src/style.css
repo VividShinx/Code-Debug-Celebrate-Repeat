@@ -126,6 +126,10 @@ li {
   text-align: center;
 }
 
+.cardOne {
+  max-width: 20px;
+}
+
 #gitHubLink {
   font-family: "Inconsolata", monospace;
   cursor: pointer;

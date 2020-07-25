@@ -24,7 +24,7 @@ function dayDisplay(date) {
 }
 
 function realTime(date) {
-  let hours = date.getHours();
+  let hours = ("0" + date.getHours()).slice("-2");
   let mins = ("0" + date.getMinutes()).slice("-2");
 
   let timestring = `${hours}:${mins}`;
