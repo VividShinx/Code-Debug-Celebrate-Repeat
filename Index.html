@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App</title>
-    <link rel="stylesheet" href="src/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>  
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="src/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
-  <script src="src/index.js"></script>
-  <body onload="wrapFix()">
-    <div class="container">
-      <span class= "spec">
-        <div class="wapp">
+<script src="src/index.js"></script>
+
+<body onload="wrapFix()">
+  <div class="container">
+    <span class="spec">
+      <div class="wapp">
         <div id=icon>
-       <img src="" id="iconPic"/>
+          <img src="" id="iconPic" />
         </div>
-         <span class="temp"><a class="celsius">°C</a></span>
-        
-        <h1 id= cityChange>
-          Melbourne
+        <span class="temp" id="tempSection"><a class="celsius">°C</a></span>
+        <button type="submit" class="metric-Button" onclick="metricChange()">Change metric</button>
+        <h1 id=cityChange>
+          Brisbane
         </h1>
         <ul>
           <li id="currentTime">
@@ -37,46 +35,46 @@
           </li>
         </ul>
         <ul>
-         <span class= "humwind">
-          <li id="Humid">
-                Humidity: 12%  <br />
-          <li id="wind">
-                Wind: 6KM/H <br />
-            <li id= "minTemp">
-            Minimum temperature: 12°C <br />
+          <span class="humwind">
+            <li id="Humid">
+              Humidity: 12% <br />
+            <li id="wind">
+              Wind: 6KM/H <br />
+            <li id="minTemp">
+              Minimum temperature: 12°C <br />
             </li>
-            <li id= "maxTemp">
+            <li id="maxTemp">
               Maximum temperature: 21°C <br />
-          </li>
             </li>
-              </li>
-              </li>
-              </li>
-              </span>
-            </span>
-                    <form>
-                      <div class="search">
-                        <input type="search" id = "mySearchBar" placeholder="Search city here">
-                      </div>
-                      <button type="submit" class="search-Button">Search</button>
-                    </form>
-            </ul>
-          </div>
-        </div>
-        </div>
-        </div>
-        
-        <div class="row weather-forecast" id="forecast">
-  </div>
-</div>
-          </div>
-        </div>
-        </div>
+            </li>
+            </li>
+            </li>
+            </li>
+          </span>
+    </span>
+    <form>
+      <div class="search">
+        <input type="search" id="mySearchBar" placeholder="Search city here">
       </div>
-      <span id="gitHubLink">
-      <a href="https://github.com/VividShinx/Code-Debug-Celebrate-Repeat" target="_blank">
+      <button type="submit" class="search-Button">Search</button>
+    </form>
+    </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <span id="gitHubLink">
+    <a href="https://github.com/VividShinx/Code-Debug-Celebrate-Repeat" target="_blank">
       Open-source code</a>&nbspby Siobhan Veal
-      </span>
-    </div>
-  </body>
+  </span>
+  </div>
+</body>
+
 </html>
